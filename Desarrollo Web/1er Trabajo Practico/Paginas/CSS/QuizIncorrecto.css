@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Pokemon';
+    src: url(Fuentes/pokemon/PKMN\ RBYGSC.ttf);
+}
+
+body {
+    font-family: 'Pokemon', Arial, sans-serif;
+    background-color: #1b2838;
+    text-align: center;
+}
+
+.boton-quiz {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #66c0f4;
+    color: #1b2838;
+    font-weight: bold;
+    font-size: 24px;
+    border: none;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
+}
+
+.boton-quiz:hover {
+    background-color: #417a9b;
+    transform: scale(1.05);
+    color: #c7d5e0;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.galeria img {
+    width: 900px;
+}
+
+.mensaje {
+    color: white;
+    font-size: 40px;
+}
