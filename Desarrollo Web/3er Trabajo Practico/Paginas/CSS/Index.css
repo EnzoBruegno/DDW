@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "CR";
+  src: url("../Fuentes/chinese rocks.otf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.bienvenida {
+  background: linear-gradient(#66c0f4, #4a8bbf);
+  background-color: #66c0f4;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.capitulo {
+  align-items: stretch;
+  display: flex;
+  gap: 20px;
+  min-height: 370px;
+}
+
+.capitulo .imagen {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 32px;
+  height: auto;
+  margin-right: 10px;
+  margin-top: 40px;
+  max-height: 300px;
+  max-width: 100%;
+  object-fit: contain;
+  width: auto;
+}
+
+.capitulo .texto {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 32px;
+  color: #e0dcd2;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  font-family: "CR", sans-serif;
+  justify-content: center;
+  margin: 40px;
+  max-width: 800px;
+  padding: 25px;
+  text-align: center;
+}
+
+.espaciado {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.fondo {
+  height: 100vh;
+  left: 0;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: -1;
+}
+
+body {
+  background: linear-gradient(180deg, #c1272d, #6e1418);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+nav {
+  align-items: center;
+  background-color: #171a21;
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+nav img {
+  height: 40px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #c7d5e0;
+}
+
+.texto {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 32px;
+  color: #e0dcd2;
+  font-family: "CR", sans-serif;
+  margin: 40px;
+  max-width: 800px;
+  padding: 25px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .bienvenida {
+    font-size: 20px;
+    padding: 8px;
+  }
+
+  .capitulo {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .capitulo .imagen {
+    margin: 20px auto;
+    max-height: 250px;
+    max-width: 90%;
+  }
+
+  .capitulo .texto {
+    font-size: 16px;
+    margin: 20px;
+    padding: 15px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
