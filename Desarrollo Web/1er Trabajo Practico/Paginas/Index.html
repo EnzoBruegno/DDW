@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enzo</title>
+    <title>Web Interactiva</title>
     <link rel="icon" href="" type="image/x-icon">
-    <link rel="stylesheet" href="CSS/Index.css">
+    <link rel="stylesheet" href="CSS/CSS.css">
 </head>
 
 <body>
@@ -16,17 +16,26 @@
             <p style="color: white; text-align: left;">Enzo Bruegno</p>
         </div>
         <ul>
-            <li class="item"><a href="Index.html">Inicio</a></li>
-            <li class="item"><a href="Biblioteca.html">Biblioteca</a></li>
-            <li class="item"><a href="Logos.html">Logos</a></li>
-            <li class="item"><a href="Quiz.html">Quiz</a></li>
+            <li class="item"><a href="#inicio" data-trad="nav_inicio">Inicio</a></li>
+            <li class="item"><a href="#biblioteca" data-trad="nav_biblioteca">Biblioteca</a></li>
+            <li class="item"><a href="#logos">Logos</a></li>
+            <li class="item"><a href="#quiz">Quiz</a></li>
+            <li class="idioma-dropdown">
+                <a href="#" data-trad="idiomas">Idiomas ▾</a>
+                <ul class="submenu">
+                    <li><a href="#" onclick="traducir('es')">Español</a></li>
+                    <li><a href="#" onclick="traducir('en')">English</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
-
-    <p class="bienvenida">¡Bienvenido a la página de Enzo Bruegno!</p>
     <video class="fondo" autoplay muted loop playsinline id="Fondo">
         <source src="Imagenes/Gato.webm" type="video/webm">
     </video>
+    <!-- Contenedor dinámico -->
+    <div id="contenido"></div>
+
+    <script src="JavaScript/Paginas.js"></script>
 </body>
 
 </html>
