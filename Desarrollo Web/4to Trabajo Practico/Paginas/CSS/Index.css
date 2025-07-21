@@ -1,0 +1,331 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to bottom, #222, #444);
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.botones button {
+    background-color: #444;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 18px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.botones button:hover {
+    background-color: #666;
+    transform: scale(1.05);
+}
+
+.boton-sonido {
+    background-color: #444;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 30px 0;
+    transition: transform 0.2s, opacity 0.3s;
+    width: 100%;
+}
+
+.boton-sonido.awp {
+    background-color: #8e24aa;
+}
+
+.boton-sonido.creeper {
+    background-color: #3fbf3f;
+}
+
+.boton-sonido.flashbang {
+    background-color: #81d4fa;
+}
+
+.boton-sonido.hitmarker {
+    background-color: #9e9e9e;
+}
+
+.boton-sonido.mario {
+    background-color: #f06292;
+}
+
+.boton-sonido.pacman {
+    background-color: #ffeb3b;
+}
+
+.boton-sonido.scorpion {
+    background-color: #ffa726;
+}
+
+.boton-sonido.snake {
+    background-color: #e53935;
+}
+
+.boton-sonido.zelda {
+    background-color: #81c784;
+}
+
+.boton-sonido:hover {
+    opacity: 0.85;
+    transform: scale(1.05);
+}
+
+.botonera-sonidos {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    width: 300px;
+
+}
+
+.contact {
+    transition: transform 0.3s ease;
+}
+
+.contact:hover {
+    transform: scale(1.20);
+}
+
+.contact-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.contenedor-lenguaje {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.calculadora {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.calculadora input {
+    background: #a0d6a0;
+    border: none;
+    border-radius: 8px;
+    color: #000;
+    font-size: 24px;
+    outline: none;
+    padding: 12px;
+    text-align: right;
+}
+
+.Cleo {
+    border-radius: 512px;
+    margin-top: 40px;
+    width: 255px;
+}
+
+.dot {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+}
+
+.dot.active {
+    background-color: white;
+}
+
+.dots {
+    bottom: 10px;
+    display: flex;
+    gap: 8px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+hr {
+    border: 0;
+    height: 4px;
+    background: linear-gradient(to right, transparent, #888, transparent);
+    margin: 60px auto;
+    width: 80%;
+    border-radius: 2px;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+.Introduccion {
+    margin-top: 25px;
+}
+
+.mis-proyectos,
+.Projectos,
+.panel-sonidos {
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+.nav-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 8px 14px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.panel-fondo {
+    background-color: rgba(60, 60, 60, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 450px;
+    padding: 25px;
+}
+
+.panel-sonidos {
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+#calculadora {
+    background: #222;
+    border-radius: 20px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.slider.compacto {
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    height: 300px;
+    margin: 20px auto 0;
+    max-width: 600px;
+    overflow: hidden;
+    position: relative;
+    width: 90%;
+}
+
+.slider-container {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    background-position: center;
+    background-size: cover;
+    flex: 0 0 100%;
+    height: 100%;
+}
+
+.Titulo {
+    margin-top: 75px;
+}
+
+nav {
+    align-items: center;
+    backdrop-filter: blur(7.5px);
+    background-color: rgba(60, 60, 60, 0.50);
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    left: 0;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav img {
+    height: 40px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #3A5F99;
+}
+
+.zona-final {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    margin: 60px auto;
+    flex-wrap: wrap;
+}
+
+.zona-final .panel-sonidos,
+.zona-final #calculadora {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.PanelH2 {
+    margin-bottom: 20px;
+}
+
+.CalculadoraH2 {
+    margin-bottom: 20px;
+}

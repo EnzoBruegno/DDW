@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Porfolio</title>
+    <link rel="stylesheet" href="CSS/Index.css" />
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="item"><a href="#Inicio">Inicio</a></li>
+            <li class="item"><a href="#Proyectos">Proyectos</a></li>
+            <li class="item"><a href="#Utilidades">Utilidades</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="Titulo" id="Inicio">
+        <h1>Software Developer</h1>
+        <br />
+        <h2 class="brillo">Enzo Bruegno</h2>
+    </div>
+
+    <img src="Imagenes/Cleo.png" alt="Cleo" class="Cleo" />
+
+    <div class="Introduccion">
+        <h3>
+            Soy un desarrollador de software en formación, <br />
+            apasionado por la tecnología y en constante aprendizaje para mejorar mis habilidades.
+        </h3>
+    </div>
+
+    <hr />
+
+    <section class="mis-proyectos" id="Proyectos">
+        <h2>Web Interactiva</h2>
+        <div class="slider compacto">
+            <div class="slider-container">
+                <div class="slide" style="background-image: url('Imagenes/pag1_img1.webp');"></div>
+                <div class="slide" style="background-image: url('Imagenes/pag1_img2.webp');"></div>
+                <div class="slide" style="background-image: url('Imagenes/pag1_img3.webp');"></div>
+                <div class="slide" style="background-image: url('Imagenes/pag1_img4.webp');"></div>
+                <div class="slide" style="background-image: url('Imagenes/pag1_img5.webp');"></div>
+                <div class="slide" style="background-image: url('Imagenes/pag1_img6.webp');"></div>
+            </div>
+            <button class="nav-btn prev-btn">&lt;</button>
+            <button class="nav-btn next-btn">&gt;</button>
+            <div class="dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+                <span class="dot" data-index="4"></span>
+                <span class="dot" data-index="5"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="mis-proyectos">
+        <h2>Contacto</h2>
+        <div class="slider compacto">
+            <div class="slider-container">
+                <div class="slide" style="background-image: url('Imagenes/pag2_img1.webp');"></div>
+                <div class="slide" style="background-image: url('Imagenes/pag2_img2.webp');"></div>
+                <div class="slide" style="background-image: url('Imagenes/pag2_img3.webp');"></div>
+            </div>
+            <button class="nav-btn prev-btn">&lt;</button>
+            <button class="nav-btn next-btn">&gt;</button>
+            <div class="dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="mis-proyectos">
+        <h2>Blog</h2>
+        <div class="slider compacto">
+            <div class="slider-container">
+                <div class="slide" style="background-image: url('Imagenes/RDR2\ Fondo\ Horizontal.png');"></div>
+                <div class="slide" style="background-image: url('Imagenes/RDR2\ Online.png');"></div>
+                <div class="slide" style="background-image: url('Imagenes/RDR2\ Cap\ 6.png');"></div>
+            </div>
+            <button class="nav-btn prev-btn">&lt;</button>
+            <button class="nav-btn next-btn">&gt;</button>
+            <div class="dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <h3>Lenguajes utilizados</h3>
+    <div class="contenedor-lenguaje">
+        <div class="lenguaje">
+            <img src="Imagenes/html.png" alt="HTML Logo" width="50">
+            </a>
+        </div>
+        <div class="lenguaje">
+            <img src="Imagenes/css.png" alt="CSS Logo" width="50">
+            </a>
+        </div>
+        <div class="lenguaje">
+            <img src="Imagenes/java-script.png" alt="JavaScript Logo" width="50">
+            </a>
+        </div>
+    </div>
+    </div>
+
+    <hr />
+
+    <section class="zona-final" id="Utilidades">
+        <div class="panel-sonidos">
+            <div class="panel-fondo">
+                <h2 class="PanelH2">Panel de sonidos</h2>
+                <div class="botonera-sonidos">
+                    <button id="boton1" class="boton-sonido creeper">Creeper</button>
+                    <button id="boton2" class="boton-sonido mario">Mario</button>
+                    <button id="boton3" class="boton-sonido pacman">Pacman</button>
+                    <button id="boton4" class="boton-sonido snake">Alerta</button>
+                    <button id="boton5" class="boton-sonido scorpion">Scorpion</button>
+                    <button id="boton6" class="boton-sonido flashbang">Flashbang</button>
+                    <button id="boton7" class="boton-sonido zelda">Item</button>
+                    <button id="boton8" class="boton-sonido hitmarker">Hitmarker</button>
+                    <button id="boton9" class="boton-sonido awp">AWP</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="calculadora">
+            <h2 class="CalculadoraH2">Calculadora</h2>
+            <div class="calculadora">
+                <input type="text" id="display" readonly />
+                <div class="botones">
+                    <button onclick="agregar('7')">7</button>
+                    <button onclick="agregar('8')">8</button>
+                    <button onclick="agregar('9')">9</button>
+                    <button onclick="agregar('*')">×</button>
+
+                    <button onclick="agregar('4')">4</button>
+                    <button onclick="agregar('5')">5</button>
+                    <button onclick="agregar('6')">6</button>
+                    <button onclick="agregar('-')">−</button>
+
+                    <button onclick="agregar('1')">o</button>
+                    <button onclick="agregar('2')">2</button>
+                    <button onclick="agregar('3')">3</button>
+                    <button onclick="agregar('+')">+</button>
+
+                    <button onclick="agregar('0')">0</button>
+                    <button onclick="agregar('.')">.</button>
+                    <button onclick="limpiar()">Borrar</button>
+                    <button onclick="calcular()">=</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="contact-container">
+        <div class="contact">
+            <a href="https://web.facebook.com/enzo.bruegno" target="_blank">
+                <img src="Imagenes/facebook.png" alt="facebook" width="50">
+            </a>
+        </div>
+        <div class="contact">
+            <a href="https://web.instagram.com/enzo.bruegno" target="_blank">
+                <img src="Imagenes/instagram.png" alt="instagram" width="50">
+            </a>
+        </div>
+        <div class="contact">
+            <a href="https://wa.me/5492954622796" target="_blank">
+                <img src="Imagenes/whatsapp.png" alt="whatsapp" width="50">
+            </a>
+        </div>
+        <div class="contact">
+            <a href="https://github.com/EnzoBruegno" target="_blank">
+                <img src="Imagenes/github.png" alt="github" width="50">
+            </a>
+        </div>
+        <div class="contact">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=enzorbruegno@gmail.com" target="_blank">
+                <img src="Imagenes/gmail.png" alt="gmail" width="50">
+            </a>
+        </div>
+        <div class="contact">
+            <a href="https://outlook.office.com/mail/deeplink/compose?to=enzorbruegno@gmail.com&subject=&body="
+                target="_blank">
+                <img src="Imagenes/outlook.png" alt="outlook" width="50">
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Enzo Bruegno. Todos los derechos reservados.</p>
+        <script src="JavaScript/Index.js"></script>
+</body>
+
+</html>
