@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #4A4A4A;
+    background: linear-gradient(to bottom right, #4A4A4A, #2A2A2A);
     font-family: 'Roboto', Arial, sans-serif;
     text-align: center;
 }
@@ -30,7 +30,8 @@ body {
     padding: 20px 35px;
     text-decoration: none;
     transition: background-color 0.75s ease, transform 0.3s ease;
-    width: auto;
+    min-width: 250px;
+    text-align: center;
 }
 
 .botones a:hover {
@@ -49,7 +50,7 @@ body {
 }
 
 .contact:hover {
-    transform: scale(1.15);
+    transform: scale(1.20);
 }
 
 .contact-container {
